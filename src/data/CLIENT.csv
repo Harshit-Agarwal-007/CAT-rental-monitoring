@@ -1,0 +1,11 @@
+client_id,client_name,reliability_score,past_delays_count,historical_demand,avg_monthly_demand,delay_history(in percentage),forecasted_weather_risk,war_risk,demand_trend,forecasted_demand
+1,Client_1,82,0,high,10,30,0.01,0.1,stable,7.160075999999998
+2,Client_2,82,1,low,8,35,0.6,0.0,stable,3.0624047999999995
+3,Client_3,91,2,med,20,10,0.2,0.2,up,14.152320000000005
+4,Client_4,93,1,high,12,8,0.1,0.1,up,11.58756192
+5,Client_5,82,5,low,14,30,0.4,0.1,down,4.881869999999999
+6,Client_6,82,5,med,15,72,0.3,0.1,stable,2.47968
+7,Client_7,87,1,high,17,40,0.6,0.3,down,6.120397800000001
+8,Client_8,82,5,low,52,75,0.6,0.2,down,5.180759999999999
+9,Client_9,82,3,med,2,46,0.1,0.3,up,0.7226495999999999
+10,Client_10,99,2,high,5,22,0.3,0.7,stable,2.2934340000000004

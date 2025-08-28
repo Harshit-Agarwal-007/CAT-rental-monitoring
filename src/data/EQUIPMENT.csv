@@ -1,0 +1,26 @@
+equipment_id,equipment_code,type,status,ideal_fuel_usage_per_hour,recommended_service_period(in days)
+1,CATX1,Excavator,maintenance,17,30
+2,CATX2,Grader,rented,10,30
+3,CATX3,Bulldozer,rented,8,30
+4,CATX4,Bulldozer,idle,8,30
+5,CATX5,Grader,rented,13,30
+6,CATX6,Bulldozer,rented,8,30
+7,CATX7,Grader,rented,13,30
+8,CATX8,Loader,rented,10,30
+9,CATX9,Crane,rented,30,30
+10,CATX10,Bulldozer,rented,8,30
+11,CATX11,Loader,rented,10,30
+12,CATX12,Grader,maintenance,13,30
+13,CATX13,Grader,rented,13,30
+14,CATX14,Bulldozer,rented,8,30
+15,CATX15,Crane,idle,30,30
+16,CATX16,Crane,maintenance,30,30
+17,CATX17,Bulldozer,maintenance,8,30
+18,CATX18,Bulldozer,maintenance,8,30
+19,CATX19,Bulldozer,idle,8,30
+20,CATX20,Excavator,maintenance,17,30
+21,CATX21,Crane,rented,30,30
+22,CATX22,Excavator,idle,17,30
+23,CATX23,Bulldozer,idle,8,30
+24,CATX24,Crane,maintenance,30,30
+25,CATX25,Crane,idle,30,30

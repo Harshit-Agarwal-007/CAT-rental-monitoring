@@ -1,0 +1,21 @@
+maintenance_id,equipment_id,service_date,service_logs
+1,21,2025-06-04,Equipment inspected
+2,16,2025-08-09,Oil filter replaced
+3,19,2025-08-06,Hydraulic fluid topped up
+4,9,2025-07-21,Tire pressure checked
+5,3,2025-08-08,Brake system serviced
+6,11,2025-07-05,Engine diagnostics run
+7,10,2025-07-10,Battery replaced
+8,16,2025-08-11,Cooling system flushed
+9,22,2025-07-04,Transmission serviced
+10,24,2025-07-13,Fuel filter changed
+11,20,2025-08-06,Fuel filter changed
+12,23,2025-06-02,Electrical wiring repaired
+13,25,2025-07-25,Sensor calibration performed
+14,5,2025-07-04,Safety inspection completed
+15,21,2025-08-14,Lubrication of moving parts
+16,10,2025-07-28,Control panel reset
+17,7,2025-06-10,Exhaust system cleaned
+18,6,2025-08-08,Gearbox serviced
+19,22,2025-06-22,Clutch adjusted
+20,21,2025-07-26,Hydraulic pump replaced
