@@ -61,7 +61,7 @@ const Alerts: React.FC = () => {
         daysUntilReturn,
         equipment_code: equipmentData?.equipment_code || 'Unknown',
         client_name: clientData?.client_name || 'Unknown',
-        forecasted_demand: clientData?.forecasted_demand || 0
+        forecasted_demand: Number((clientData?.forecasted_demand || 0).toFixed(2))
       };
     })
     .filter(rental => rental.daysUntilReturn <= 7 && rental.daysUntilReturn >= 0)

@@ -19,12 +19,12 @@ const Forecasting: React.FC = () => {
     // Simulate historical data based on client's avg_monthly_demand with some variation
     const basedemand = selectedClient?.avg_monthly_demand || 0;
     const variation = (Math.random() - 0.5) * 0.3; // ±15% variation
-    const demand = Math.max(0, Math.round(basedemand * (1 + variation)));
+    const demand = Math.max(0, Number((basedemand * (1 + variation)).toFixed(2)));
     
     return {
       month: month.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }),
       demand,
-      forecast: i >= 8 ? selectedClient?.forecasted_demand || 0 : null
+      forecast: i >= 8 ? Number((selectedClient?.forecasted_demand || 0).toFixed(2)) : null
     };
   });
 
@@ -48,7 +48,7 @@ const Forecasting: React.FC = () => {
     
     return {
       month: month.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }),
-      forecast: Math.max(0, Math.round(forecastValue))
+      forecast: Math.max(0, Number(forecastValue.toFixed(2)))
     };
   });
 
@@ -58,7 +58,7 @@ const Forecasting: React.FC = () => {
   const clientComparison = clients.map(client => ({
     client_name: client.client_name,
     current_demand: client.avg_monthly_demand,
-    forecasted_demand: Math.round(client.forecasted_demand),
+    forecasted_demand: client.forecasted_demand, // Keep decimal values
     reliability_score: client.reliability_score,
     trend: client.demand_trend
   })).sort((a, b) => b.forecasted_demand - a.forecasted_demand);
@@ -114,7 +114,7 @@ const Forecasting: React.FC = () => {
               <div className="text-sm text-gray-600">Past Delays</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">{Math.round(selectedClient.forecasted_demand)}</div>
+              <div className="text-2xl font-bold text-gray-900">{Number(selectedClient.forecasted_demand).toFixed(2)}</div>
               <div className="text-sm text-gray-600">Forecasted Demand</div>
             </div>
           </div>
@@ -192,7 +192,7 @@ const Forecasting: React.FC = () => {
                     {client.current_demand}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    {client.forecasted_demand}
+                    {Number(client.forecasted_demand).toFixed(2)}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
